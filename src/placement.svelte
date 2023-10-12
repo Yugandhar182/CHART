@@ -76,7 +76,7 @@
                         width: 10,
                         height: 10
                     },
-                    name: 'Days',
+                    name: 'Avg.Days to fill',
                   
                 },
             ],
@@ -91,7 +91,8 @@
             tooltip: {
                 enable: true,
                 shared: true,
-                format: ' <b>${point.y}</b>',
+                format: '${series.name}: <b>${point.y}</b>',
+             
             },
             legendSettings: {
         visible: true,
@@ -116,4 +117,8 @@
         margin-top: 30px;
         border: 4px solid rgb(234, 234, 245);
     }
+    .e-tooltip-wrap.e-popup {
+    background-color: #fff;
+    border: 2px solid #000;
+}
 </style>
